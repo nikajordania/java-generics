@@ -8,14 +8,14 @@ public class ProgramRecordExample {
         System.out.println(tom1.toString());
 
 
-        Person tom = new Person("Tom", 36);
+        PersonRecord tom = new PersonRecord("Tom", 36);
 
         System.out.println(tom.name());     // Tom
         System.out.println(tom.age());      // 36
         System.out.println(tom.hashCode());
 
-        Person bob = new Person("Bob", 21);
-        Person tomas = new Person("Tom", 36);
+        PersonRecord bob = new PersonRecord("Bob", 21);
+        PersonRecord tomas = new PersonRecord("Tom", 36);
         System.out.println(tom.equals(bob));    // false
         System.out.println(tom.equals(tomas));  // true
     }
