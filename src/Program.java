@@ -2,7 +2,7 @@ public class Program {
 
     public static void main(String[] args) {
 
-        Book b1 = new Book("War and Peace", "L. Tolstoy", Type.BELLETRE);
+        Book b1 = new Book("Harry Potter", "J. K. Rowling", Type.PHANTASY);
         System.out.printf("Book '%s' has a type %s", b1.name, b1.bookType);
 
         switch (b1.bookType) {
@@ -18,6 +18,13 @@ public class Program {
             case PHANTASY:
                 System.out.println("Phantasy");
                 break;
+        }
+
+        switch (b1.bookType) {
+            case BELLETRE -> System.out.println("Belletre");
+            case SCIENCE -> System.out.println("Science");
+            case SCIENCE_FICTION -> System.out.println("Science fiction");
+            case PHANTASY -> System.out.println("Phantasy");
         }
 
         Type[] types = Type.values();
