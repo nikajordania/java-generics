@@ -83,3 +83,26 @@ class CustomPersonComparator implements Comparator<Person2> {
         return p1.getAddress().getCountry().compareTo(p2.getAddress().getCountry());
     }
 }
+
+
+//class Student {
+//    private String name;
+//    private int age;
+//
+//    public static Comparator<Student> ageComparator = new Comparator<Student>() {
+//        @Override
+//        public int compare(Student s1, Student s2) {
+//            return s1.age - s2.age;
+//        }
+//    };
+//}
+
+//class Student implements Comparable<Student> {
+//    private String name;
+//    private int age;
+//
+//    @Override
+//    public int compareTo(Student other) {
+//        return this.age - other.age;
+//    }
+//}
