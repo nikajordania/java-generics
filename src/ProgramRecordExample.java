@@ -1,8 +1,8 @@
-import java.util.Objects;
+import model.Person;
 
 public class ProgramRecordExample {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Person tom1 = new Person("Tom1", 36);
         System.out.println(tom1.toString());
@@ -18,38 +18,6 @@ public class ProgramRecordExample {
         PersonRecord tomas = new PersonRecord("Tom", 36);
         System.out.println(tom.equals(bob));    // false
         System.out.println(tom.equals(tomas));  // true
-    }
-}
-
-class Person {
-    private final String name;
-    private final int age;
-
-    Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    String name() {
-        return name;
-    }
-
-    int age() {
-        return age;
-    }
-
-    public boolean equals(Object o) {
-        if (!(o instanceof Person)) return false;
-        Person other = (Person) o;
-        return other.name == name && other.age == age;
-    }
-
-    public int hashCode() {
-        return Objects.hash(name, age);
-    }
-
-    public String toString() {
-        return String.format("Person[name=%s, age=%d]", name, age);
     }
 }
 
@@ -86,7 +54,7 @@ record PersonChecked(String name, int age) {
     }
 
     public String toString() {
-        return String.format("Person %s, Age: %d", name, age);
+        return String.format("model.Person %s, Age: %d", name, age);
     }
 
 

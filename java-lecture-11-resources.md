@@ -99,6 +99,6 @@ public class EnumExample {
 
 ### Example Practical Task 3
 
-**Serialization** Implement serialization and deserialization for the `Person` record using the `Serializable` interface. Save instances of `Person` to a file, and then read and display the information from that file.
+**Serialization** Implement serialization and deserialization for the `model.Person` record using the `Serializable` interface. Save instances of `model.Person` to a file, and then read and display the information from that file.
 
 
